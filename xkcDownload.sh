@@ -15,7 +15,6 @@ while [ $COUNT -le $END ] ; do
 	let COUNT+=1
 done
 cd ..
-#if [ "ls -A xkcd_comics/" ] ; then
 if [ "$(ls -A xkcd_comics/)" ] ; then
 	tar -cvf xkcd_comics.tar xkcd_comics/
 fi
