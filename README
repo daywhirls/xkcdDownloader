@@ -1,0 +1,13 @@
+David Worley
+worleyd
+
+PASSWORD SCRIPT:
+	My Password script works properly and takes a single line from a file and exports the score to the specified file.
+
+XKCDOWNLOAD SCRIPT:
+	All functionality works properly. It traverses through the HTML of each link, finds the line containing the file name (which is always the 75th line of every HTML link it grabs - it searches for the keywords contained in that line), and it wgets that img link.
+	- prints usage msg and exits upon receiving invalid arguments or range > 20
+	- creates a dir named xkcd_comics
+	- loops through and grabs the images
+	- creates a tarball ONLY IF folder is not empty
+	- removes the 'xkcd_comics' dir it made to store the pictures to tarball together
